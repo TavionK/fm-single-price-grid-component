@@ -1,0 +1,59 @@
+:root {
+  /*Primary*/
+  --teal-200: hsl(179, 47%, 51%);
+  --teal-500: hsl(179, 62%, 43%);
+  --green-400: hsl(71, 73%, 54%);
+  /*Neutral*/
+  --teal-100: hsl(204, 43%, 93%);
+  --gray-500: hsl(218, 22%, 67%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+}
+
+/*Typography*/
+h1 {
+  color: var(--teal-500);
+}
+
+h2 {
+  color: white;
+}
+
+.gray-txt {
+  color: var(--gray-500);
+}
+
+.green-txt {
+  color: var(--green-400);
+}
+
+.md-bg p {
+  color: white;
+}
+
+/*White bg section*/
+
+/* Dark bg section*/
+.dark-bg {
+  background-color: var(--teal-500);
+  color: white;
+}
+
+.dark-bg a {
+  background-color: var(--green-400);
+  text-decoration: none;
+  color: white;
+}
+
+/*Medium bg section*/
+.md-bg {
+  background-color: var(--teal-200);
+}
