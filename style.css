@@ -35,7 +35,8 @@ h2 {
 h1,
 h2 {
   font-size: 1.5rem;
-  margin: 1em 0;
+  margin: 0.75em 0;
+  font-weight: 400;
 }
 
 .gray-txt {
@@ -48,6 +49,17 @@ h2 {
 }
 
 .md-bg p {
+  color: white;
+}
+
+.price-per {
+  color: hsl(181.36, 62.86%, 72.55%);
+  letter-spacing: 1px;
+}
+.price-num {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-right: 0.5em;
   color: white;
 }
 /*Main*/
@@ -82,6 +94,12 @@ main {
   color: white;
 }
 
+.price-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
 .dark-bg a {
   background-color: var(--green-400);
   text-decoration: none;
@@ -91,8 +109,12 @@ main {
   border-radius: 5px;
   padding: 0.5em 1em;
   font-size: 1.25rem;
-  /*#todo add drop shadow*/
+  margin-top: 1.5em;
+  box-shadow: 0 10px 10px hsla(0, 0%, 0%, 0.2);
 }
+
+/*#todo add hover effect*/
+/*#todo add tab focus border*/
 
 /*Medium bg section*/
 .md-bg {
