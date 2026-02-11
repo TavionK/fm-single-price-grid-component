@@ -63,12 +63,12 @@ h2 {
   margin-right: 0.5em;
   color: white;
 }
-/*Main*/
-main {
-  height: 100vh;
+
+body {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 }
 
 /*Card*/
@@ -76,8 +76,9 @@ main {
   max-width: 375px;
   display: flex;
   flex-direction: column;
-  border-radius: 5px;
+  border-radius: 10px;
   overflow: hidden;
+  margin: 1em;
 }
 
 .card section {
@@ -129,4 +130,35 @@ main {
 /*Medium bg section*/
 .md-bg {
   background-color: var(--teal-200);
+}
+
+/*Desktop version*/
+@media screen and (min-width: 768px) {
+  .card {
+    max-width: 755px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "main main"
+      "sub why";
+  }
+
+  .white-bg {
+    grid-area: main;
+  }
+
+  .dark-bg {
+    grid-area: sub;
+  }
+
+  .md-bg {
+    grid-area: why;
+  }
+}
+
+/*Extra small devices*/
+@media screen and (max-width: 375px) {
+  .card {
+    max-width: 320px;
+  }
 }
