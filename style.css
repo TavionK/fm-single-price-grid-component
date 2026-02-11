@@ -100,7 +100,7 @@ main {
   gap: 0.5em;
 }
 
-.dark-bg a {
+.btn {
   background-color: var(--green-400);
   text-decoration: none;
   color: white;
@@ -109,7 +109,7 @@ main {
   border-radius: 5px;
   padding: 0.5em 1em;
   font-size: 1.25rem;
-  margin-top: 1.5em;
+  margin: 1.5em 0 0.5em;
   box-shadow: 0 10px 10px hsla(0, 0%, 0%, 0.2);
 }
 
