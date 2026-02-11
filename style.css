@@ -6,6 +6,7 @@
   /*Neutral*/
   --teal-100: hsl(204, 43%, 93%);
   --gray-500: hsl(218, 22%, 67%);
+  --background: hsl(206.25, 47.06%, 93.33%);
 }
 
 * {
@@ -16,6 +17,7 @@
 
 body {
   font-family: "Karla", sans-serif;
+  background-color: var(--background);
 }
 
 /*Typography*/
@@ -38,8 +40,27 @@ h2 {
 .md-bg p {
   color: white;
 }
+/*Main*/
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Card*/
+.card {
+  max-width: 375px;
+}
+
+.card section {
+  padding: 1.5em;
+}
 
 /*White bg section*/
+.white-bg {
+  background-color: white;
+}
 
 /* Dark bg section*/
 .dark-bg {
