@@ -3,6 +3,7 @@
   --teal-200: hsl(179, 47%, 51%);
   --teal-500: hsl(179, 62%, 43%);
   --green-400: hsl(71, 73%, 54%);
+  --green-500: hsl(71, 60%, 54%);
   /*Neutral*/
   --teal-100: hsl(204, 43%, 93%);
   --gray-500: hsl(218, 22%, 67%);
@@ -97,7 +98,6 @@ main {
 .price-container {
   display: flex;
   align-items: center;
-  gap: 0.5em;
 }
 
 .btn {
@@ -111,12 +111,14 @@ main {
   font-size: 1.25rem;
   margin: 1.5em 0 0.5em;
   box-shadow: 0 10px 10px hsla(0, 0%, 0%, 0.2);
-  transition: transform 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-weight: 700;
 }
 
 .btn:hover {
   transform: scale(1.05);
   cursor: pointer;
+  background-color: var(--green-500);
 }
 
 .btn:focus-visible {
