@@ -111,10 +111,18 @@ main {
   font-size: 1.25rem;
   margin: 1.5em 0 0.5em;
   box-shadow: 0 10px 10px hsla(0, 0%, 0%, 0.2);
+  transition: transform 0.2s ease-in-out;
 }
 
-/*#todo add hover effect*/
-/*#todo add tab focus border*/
+.btn:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.btn:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
 
 /*Medium bg section*/
 .md-bg {
